@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="root">
+	<item value="1.0" key="pref.editor_zoom"/>
+	<item value="Control" key="pref.default_control_name"/>
+	<item value="64:128:0:" key="pref.default_fill_color"/>
+</section>

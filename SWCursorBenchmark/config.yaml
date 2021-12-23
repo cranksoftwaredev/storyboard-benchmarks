@@ -1,0 +1,5 @@
+meta:
+  description: |-
+    SWCursor Benchmark
+
+    A simple benchmark to measure the fps of the SWCursor.

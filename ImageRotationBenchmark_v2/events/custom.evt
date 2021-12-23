@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event name="quit" type="0x40"/>
+  <event name="screen2" type="0x40"/>
+  <event name="send_tick" type="0x10"/>
+  <event name="timer.Exit" type="0x8">
+    <description>The timer named timer.Exit has fired</description>
+  </event>
+</eventdefinitions>

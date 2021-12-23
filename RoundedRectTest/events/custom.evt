@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event name="timer.AnimTimer" type="0x8">
+    <description>The timer named timer.AnimTimer has fired</description>
+  </event>
+  <event name="timer.AnimTimer2" type="0x8">
+    <description>The timer named timer.AnimTimer2 has fired</description>
+  </event>
+  <event name="timer.QuitTimer" type="0x8">
+    <label>timer.QuitTimer timer fired</label>
+    <description>The timer named timer.QuitTimer has fired</description>
+  </event>
+  <event name="timer.SwapTimer" type="0x8">
+    <description>The timer named timer.SwapTimer has fired</description>
+  </event>
+</eventdefinitions>

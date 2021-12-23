@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>GUIMark 2 - HTML5 Bitmap Test</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+var assets = {
+	"EnemySouth1":"assets/monster/s1.png", "EnemySouth2":"assets/monster/s2.png", "EnemySouth3":"assets/monster/s3.png",
+	"EnemyEast1":"assets/monster/e1.png", "EnemyEast2":"assets/monster/e2.png", "EnemyEast3":"assets/monster/e3.png",
+	"EnemyWest1":"assets/monster/w1.png", "EnemyWest2":"assets/monster/w2.png", "EnemyWest3":"assets/monster/w3.png",
+	"EnemyNorth1":"assets/monster/n1.png", "EnemyNorth2":"assets/monster/n2.png", "EnemyNorth3":"assets/monster/n3.png",
+	"Tower":"assets/lighthouse.png", "TowerTop":"assets/lighthousetop.png",
+	"Bomb1":"assets/explosion/e_f01.png","Bomb2":"assets/explosion/e_f02.png","Bomb3":"assets/explosion/e_f03.png","Bomb4":"assets/explosion/e_f04.png",
+	"Bomb5":"assets/explosion/e_f05.png","Bomb6":"assets/explosion/e_f06.png","Bomb7":"assets/explosion/e_f07.png","Bomb8":"assets/explosion/e_f08.png"
+};
+function preloadAssets(){
+	var preloaded = 0;
+	var count = 0;
+	for(var asset in assets){
+		count++;
+		var img = new Image();
+		img.onload = function(){
+			preloaded++;
+			if(preloaded == count){
+				init();
+			}
+		}
+		img.src = assets[asset];
+		assets[asset] = img;
+	}
+}
+
+var meter;
+var fps;
+var draw;
+var results;
+var monsters = [];
+var explosions = [];
+
+function init(){
+	var southWalk = [assets["EnemySouth1"], assets["EnemySouth2"], assets["EnemySouth3"], assets["EnemySouth2"]];
+	var eastWalk = [assets["EnemyEast1"], assets["EnemyEast2"], assets["EnemyEast3"], assets["EnemyEast2"]];
+	var westWalk = [assets["EnemyWest1"], assets["EnemyWest2"], assets["EnemyWest3"], assets["EnemyWest2"]];
+	var northWalk = [assets["EnemyNorth1"], assets["EnemyNorth2"], assets["EnemyNorth3"], assets["EnemyNorth2"]];
+	var R = Math.PI/180;
+	
+	//create monsters
+	for(var i=0; i<600; i++){
+		var speed = 3+(Math.random()*2);
+		var angle = Math.random()*360;
+		
+		var fb = null;
+		if(angle >= 45 && angle < 135){
+			fb = new FramedBitmap(southWalk);
+		}else if(angle >= 135 && angle < 225){
+			fb = new FramedBitmap(westWalk);
+		}else if(angle >= 225 && angle < 315){
+			fb = new FramedBitmap(northWalk);
+		}else{
+			fb = new FramedBitmap(eastWalk);
+		}
+		fb.x = Math.random()*1200;
+		fb.y = Math.random()*600;
+		fb.xMove = Math.cos(angle*R)*speed;
+		fb.yMove = Math.sin(angle*R)*speed;
+		fb.scale = 0.5+(Math.random()*0.7);
+		fb.randomize();
+		monsters.push(fb);
+	}
+	
+	//create explosions
+	for(var i=0; i<8; i++){
+		var fb = new FramedBitmap([assets["Bomb1"], assets["Bomb2"], assets["Bomb3"], assets["Bomb4"], assets["Bomb5"], assets["Bomb6"], assets["Bomb7"], assets["Bomb8"]]);
+		fb.frame = i;
+		fb.x = -200;
+		fb.y = -200;
+		explosions.push(fb);
+	}
+			
+	var canvas = document.getElementById('canvas');
+	draw = canvas.getContext('2d');
+	fps = document.getElementById("current");
+	results = document.getElementById("results");
+	meter = new FPSMeter();
+	setInterval("processFrame()", 17);
+}
+
+function processFrame(){
+	draw.clearRect(0,0,1200,600);
+	
+	//position monsters
+	for(var i=0; i<monsters.length; i++){
+		var fb = monsters[i];
+		fb.x += fb.xMove;
+		fb.y += fb.yMove;
+		if(fb.x < -40){
+			fb.x += 1240;
+		}else if(fb.x > 1200){
+			fb.x -= 1240;
+		}
+		if(fb.y < -40){
+			fb.y += 640;
+		}else if(fb.y > 600){
+			fb.y -= 640;
+		}
+		
+		if(fb.y <= 330){
+			draw.save();
+			draw.scale(fb.scale, fb.scale);
+			draw.drawImage(fb.getNextBitmap(), fb.x/fb.scale, fb.y/fb.scale);
+			draw.restore();
+		}
+	}
+	
+	//draw tower
+	draw.drawImage(assets["Tower"], 550, 100);
+	
+	//draw monsters above tower
+	for(var i=0; i<monsters.length; i++){
+		var fb = monsters[i];
+		if(fb.y > 330){
+			draw.save();
+			draw.scale(fb.scale, fb.scale);
+			draw.drawImage(fb.getNextBitmap(), fb.x/fb.scale, fb.y/fb.scale);
+			draw.restore();
+		}
+	}
+	
+	//draw laser and explosions
+	for(var i=0; i<8; i++){
+		var fb = explosions[i];
+		if(fb.frame == 0){
+			var dist = 200;
+			var angle = Math.random()*360*Math.PI/180;
+			fb.x = 520+(Math.cos(angle)*dist);
+			fb.y = 270+(Math.sin(angle)*dist);
+			draw.beginPath();
+			draw.lineWidth = 3;
+			draw.strokeStyle = "#FF0000";
+			draw.moveTo(612, 180);
+			draw.lineTo(fb.x+83, fb.y+70);
+			draw.stroke();
+			draw.closePath();
+		}
+		draw.drawImage(fb.getNextBitmap(), fb.x, fb.y);
+	}
+	
+	//draw tower top
+	draw.drawImage(assets["TowerTop"], 570, 124);
+	
+	updatePerformance();
+}
+
+function updatePerformance(){
+	meter.increment();
+	fps.innerHTML = "Current: "+meter.getFramerate()+" fps";
+	if(testRunning){
+		continueTest();
+	}
+}
+
+//test runner
+var testBegin = 0;
+var testData = [];
+var testRunning = false;
+function startTest(){
+	testBegin = TimeUtil.getTimer();
+	testRunning = true;
+	testData = [];
+	results.innerHTML = "Running..."
+}
+function continueTest(){
+	var time = TimeUtil.getTimer();
+	testData.push(time);
+	if(time-testBegin > 10000){
+		testRunning = false;
+		var output = testData.length/(time-testBegin)*1000;
+		results.innerHTML = "Test Average: "+FPSMeter.formatNumber(output)+" fps"
+	}
+}
+
+//additional classes
+function FramedBitmap(sourceArray){
+	var bitmaps = sourceArray;
+	
+	this.frame = 0;
+	this.increment = function(){
+		if(++this.frame >= bitmaps.length){
+			this.frame = 0;
+		}
+	}
+	this.randomize = function(){
+		this.frame = Math.floor(Math.random()*bitmaps.length);
+	}
+	this.getBitmap = function(){
+		return bitmaps[this.frame];
+	}
+	this.getNextBitmap = function(){
+		this.increment();
+		return this.getBitmap();
+	}
+}
+
+function FPSMeter(){
+	var sampleFPS = 0;
+	var lastSampledTime = 0;
+	var sampleFrames = 0;
+	
+	this.sampleDuration = 500;
+	this.increment = function(){
+		sampleFrames++;
+	}
+	this.getFramerate = function(){
+		var diff = TimeUtil.getTimer()-lastSampledTime;
+		if(diff >= this.sampleDuration){
+			var rawFPS = sampleFrames/(diff/1000);
+			sampleFPS = FPSMeter.formatNumber(rawFPS);
+			sampleFrames = 0;
+			lastSampledTime = TimeUtil.getTimer();
+		}
+		return sampleFPS;
+	}
+}
+FPSMeter.formatNumber = function(val){
+	//format as XX.XX
+	return Math.floor(val*100)/100;
+}
+
+TimeUtil = {
+	startTime: new Date().getTime(),
+	getTimer: function(){
+		return new Date().getTime()-TimeUtil.startTime;
+	}
+}
+
+</script>
+<style type="text/css">
+.header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	width: 1200px;
+	height: 30px;
+	background-color: #C0C4DF;
+}
+.header>div {
+	padding: 6px;
+	display: inline-block;
+}
+</style>
+</head>
+
+<body onload="preloadAssets()" style="margin:0px">
+	<div class="header">
+		<div style="width:300px">GUIMark - Bitmap Game Test</div>
+		<div><input type="button" value="Start Test" onclick="startTest()"/></div>
+		<div id="current" style="width:140px">Current: 10 fps</div>
+		<div id="results"></div>
+	</div>
+	<canvas id="canvas" width="1200" height="600" style="background-image:url(assets/groundtile.png)"></canvas>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15981974-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

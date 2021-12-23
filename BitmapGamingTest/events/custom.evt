@@ -1,0 +1,8 @@
+
+start_timer
+
+timer.tick##tick timer fired #The timer named tick is firing
+
+timer.fps##fps timer fired #The timer named fps is firing
+
+screen_update

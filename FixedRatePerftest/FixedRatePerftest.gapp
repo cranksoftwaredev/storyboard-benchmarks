@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gapp version="2.0">
+  <dimension format="ARGB8888" height="480" width="640"/>
+  <data format="1s0" key="action_type" value=""/>
+  <data format="1s0" key="results" value="Insert Text"/>
+  <layers>
+    <layer height="480" name="Layer1" width="640">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_fade</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.screen.fade">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen2</arg>
+      </action>
+      <control active="1" height="480" hidden="0" name="control1" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xff0000</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+        <render handler="text">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="font">fonts/DejaVuSans.ttf</arg>
+          <arg k="halign">2</arg>
+          <arg k="rotation">0</arg>
+          <arg k="size">16</arg>
+          <arg k="style">1</arg>
+          <arg k="text">Fading</arg>
+          <arg k="underline">0</arg>
+          <arg k="valign">2</arg>
+          <arg k="wrap">0</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer10" width="640">
+      <action input_event="gre.animate.complete.scale_image_larger" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.scale_image_larger" type="gra.screen.fade">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen11</arg>
+      </action>
+      <control active="1" height="480" hidden="0" name="control9" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xff</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="300" hidden="0" name="control10" opaque="1" width="400" x="0" y="0">
+        <data format="4s1" key="image_h" value="300"/>
+        <data format="4s1" key="image_w" value="400"/>
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">2</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/simpsons_nirvana_400x300.jpg</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">1</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">2</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer11" width="640">
+      <action input_event="gre.animate.complete.scale_image_smaller" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <control active="1" height="480" hidden="0" name="control11" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xff8000</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="480" hidden="0" name="control12" opaque="1" width="640" x="0" y="0">
+        <data format="4s1" key="image_h" value="-1"/>
+        <data format="4s1" key="image_w" value="-1"/>
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">2</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/simpson-wallpapers-the-simpsons-1119343_640_480.jpg</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">1</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">2</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer12" width="640">
+      <control active="1" height="480" hidden="0" name="control13" opaque="1" width="640" x="0" y="0">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/SpaceT 640x480.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="85" hidden="0" name="cranklogo_dual" opaque="1" width="200" x="25" y="33">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/crank_logo.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="193" hidden="0" name="banana_dual" opaque="1" width="227" x="25" y="137">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/GO_BANANA_logo.jpg</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="ball_dual" opaque="1" width="128" x="25" y="342">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ball.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer13" width="640">
+      <control active="1" height="130" hidden="0" name="poly_fill" opaque="1" width="180" x="10" y="30">
+        <render handler="poly">
+          <arg k="alpha">255</arg>
+          <arg k="antialias">0</arg>
+          <arg k="centerx">30</arg>
+          <arg k="centery">65</arg>
+          <arg k="color">0x0</arg>
+          <arg k="linewidth">1</arg>
+          <arg k="outlinecolor">0x0</arg>
+          <arg k="points">0:60 0:0 30:0 40:10 60:10 80:0 120:0 130:20 80:20 80:40 110:40 110:60 60:60 40:30 20:60</arg>
+          <arg k="rotation">45</arg>
+          <arg k="style">fill</arg>
+          <arg k="x">0</arg>
+          <arg k="y">5</arg>
+        </render>
+      </control>
+      <control active="1" height="130" hidden="0" name="poly_loop" opaque="1" width="180" x="10" y="161">
+        <render handler="poly">
+          <arg k="alpha">255</arg>
+          <arg k="antialias">0</arg>
+          <arg k="centerx">30</arg>
+          <arg k="centery">65</arg>
+          <arg k="color">0x0</arg>
+          <arg k="linewidth">5</arg>
+          <arg k="outlinecolor">0x0</arg>
+          <arg k="points">0:60 0:0 30:0 40:10 60:10 80:0 120:0 130:20 80:20 80:40 110:40 110:60 60:60 40:30 20:60</arg>
+          <arg k="rotation">45</arg>
+          <arg k="style">loop</arg>
+          <arg k="x">0</arg>
+          <arg k="y">5</arg>
+        </render>
+      </control>
+      <control active="1" height="130" hidden="0" name="rect_fill" opaque="1" width="180" x="10" y="292">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="height">60</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="width">130</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer2" width="640">
+      <action input_event="gre.screenshow.post" type="gra.screen.path">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen3</arg>
+      </action>
+      <control active="1" height="480" hidden="0" name="control2" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xffff80</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+        <render handler="text">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="font">fonts/DejaVuSans.ttf</arg>
+          <arg k="halign">2</arg>
+          <arg k="rotation">0</arg>
+          <arg k="size">16</arg>
+          <arg k="style">1</arg>
+          <arg k="text">Sliding</arg>
+          <arg k="underline">0</arg>
+          <arg k="valign">2</arg>
+          <arg k="wrap">0</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer3" width="640">
+      <action input_event="gre.animate.complete.NewAnimation" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">GoBananaAnimation</arg>
+      </action>
+      <action input_event="gre.animate.complete.GoBananaAnimation" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">CrankAnimation</arg>
+      </action>
+      <action input_event="gre.animate.complete.CrankAnimation" type="gra.screen.fade">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen4</arg>
+      </action>
+      <action input_event="gre.animate.complete.CrankAnimation" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.GoBananaAnimation" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.NewAnimation" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <control active="1" height="64" hidden="0" name="animcontrol" opaque="1" width="62" x="20" y="34">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xff80</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="193" hidden="0" name="gobanana" opaque="1" width="227" x="12" y="112">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/GO_BANANA_logo.jpg</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="85" hidden="0" name="crank_logo" opaque="1" width="200" x="12" y="354">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/crank_logo.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer4" width="640">
+      <control active="1" height="480" hidden="0" name="control3" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xffffff</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+        <render handler="text">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="font">fonts/DejaVuSans.ttf</arg>
+          <arg k="halign">2</arg>
+          <arg k="rotation">0</arg>
+          <arg k="size">16</arg>
+          <arg k="style">1</arg>
+          <arg k="text">Animating</arg>
+          <arg k="underline">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="wrap">0</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer5" width="640">
+      <control active="1" height="480" hidden="0" name="control4" opaque="1" width="640" x="0" y="0">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/SpaceT 640x480.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer6" width="640">
+      <control active="1" height="480" hidden="0" name="control7" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xffffff</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+        <render handler="text">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x0</arg>
+          <arg k="font">fonts/DejaVuSans.ttf</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="size">16</arg>
+          <arg k="style">1</arg>
+          <arg k="text">${app:results}</arg>
+          <arg k="underline">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="wrap">0</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer7" width="640">
+      <action input_event="gre.animate.complete.spin_logo" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.spin_logo" type="gra.screen.scale">
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="screen">Screen5</arg>
+      </action>
+      <control active="1" height="241" hidden="0" name="control5" opaque="1" width="299" x="176" y="128">
+        <data format="4s1" key="rot" value="0"/>
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">2</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/crank_logo.png</arg>
+          <arg k="rotation">${control:rot}</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">2</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer8" width="640">
+      <action input_event="gre.animate.complete.Crank2" type="gra.screen.path">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen7</arg>
+      </action>
+      <action input_event="gre.animate.complete.Crank2" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.GoBanana2" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">Crank2</arg>
+      </action>
+      <action input_event="gre.animate.complete.GoBanana2" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.New2" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">GoBanana2</arg>
+      </action>
+      <action input_event="gre.animate.complete.New2" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <control active="1" height="64" hidden="0" name="animcontrolcopy1" opaque="1" width="62" x="20" y="34">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xff80</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="193" hidden="0" name="gobananacopy1" opaque="1" width="227" x="12" y="112">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/GO_BANANA_logo.jpg</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="85" hidden="0" name="crank_logocopy1" opaque="1" width="200" x="12" y="354">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="color">0x0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/crank_logo.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="480" name="Layer9" width="640">
+      <action input_event="gre.animate.complete.spin_poly" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.spin_poly" type="gra.screen.path">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen8</arg>
+      </action>
+      <control active="1" height="480" hidden="0" name="control6" opaque="1" width="640" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xffffff</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="433" hidden="0" name="control6copy1" opaque="1" width="602" x="0" y="0">
+        <data format="4s1" key="rot1" value="0"/>
+        <render handler="poly">
+          <arg k="alpha">255</arg>
+          <arg k="antialias">0</arg>
+          <arg k="centerx">300</arg>
+          <arg k="centery">220</arg>
+          <arg k="color">0xff8000</arg>
+          <arg k="halign">1</arg>
+          <arg k="linewidth">0</arg>
+          <arg k="outlinecolor">0x0</arg>
+          <arg k="points">100:200 300:300 500:150</arg>
+          <arg k="rotation">${control:rot1}</arg>
+          <arg k="style">filloutline</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+  </layers>
+  <screens>
+    <screen default="1" name="Screen1">
+      <instance alpha="255" hidden="0" index="0" layer="Layer1" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen10">
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">polyfill</arg>
+      </action>
+      <action input_event="gre.animate.complete.polyfill" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.polyfill" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">polyloop</arg>
+      </action>
+      <action input_event="gre.animate.complete.polyloop" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.polyloop" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">rectfill</arg>
+      </action>
+      <action input_event="gre.animate.complete.rectfill" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.rectfill" type="gra.lua">
+        <arg k="script">quit_app</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer4" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="1" layer="Layer13" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen11">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_fade</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">scale_image_smaller</arg>
+      </action>
+      <action input_event="gre.animate.complete.scale_image_smaller" type="gra.screen">
+        <arg k="layers">all</arg>
+        <arg k="screen">Screen9</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer11" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen2">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_fade</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer2" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen3">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_path</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">NewAnimation</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer4" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="1" layer="Layer3" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen4">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_fade</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">spin_logo</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer5" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="1" layer="Layer7" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen5">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_scale</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.screen.path">
+        <arg k="direction">top</arg>
+        <arg k="duration">1000</arg>
+        <arg k="fps">60</arg>
+        <arg k="layers">all</arg>
+        <arg k="rate">linear</arg>
+        <arg k="screen">Screen6</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer6" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen6">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_path</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">New2</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer5" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="1" layer="Layer8" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen7">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_path</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">spin_poly</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer9" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen8">
+      <action input_event="gre.screenshow.post" type="gra.datachange">
+        <arg k="${app:action_type}">screen_path</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">get_perf_data</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">scale_image_larger</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer10" opaque="0" x="0" y="0"/>
+    </screen>
+    <screen name="Screen9">
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">banana_dual</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">crank_dual</arg>
+      </action>
+      <action input_event="gre.animate.complete.crank_dual" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.ball_dual" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.animate">
+        <arg k="id"/>
+        <arg k="name">ball_dual</arg>
+      </action>
+      <action input_event="gre.animate.complete.banana_dual" type="gra.lua">
+        <arg k="script">get_perf_data_animation</arg>
+      </action>
+      <action input_event="gre.animate.complete.ball_dual" type="gra.screen">
+        <arg k="layers">all</arg>
+        <arg k="screen">Screen10</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="Layer12" opaque="0" x="0" y="0"/>
+    </screen>
+  </screens>
+  <animations>
+    <animation duration="1000" fps="60" iterations="1" name="spin_logo">
+      <step format="4s1" from="0" key="${app:Layer7.control5.rot}" rate="linear" to="360"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="NewAnimation">
+      <step format="4s1" from="20" key="${app:Layer3.animcontrol.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="GoBananaAnimation">
+      <step format="4s1" from="12" key="${app:Layer3.gobanana.grd_x}" rate="linear" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="CrankAnimation">
+      <step format="4s1" from="12" key="${app:Layer3.crank_logo.grd_x}" rate="linear" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="Crank2">
+      <step format="4s1" key="${app:Layer8.crank_logocopy1.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="GoBanana2">
+      <step format="4s1" from="12" key="${app:Layer8.gobananacopy1.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="New2">
+      <step format="4s1" from="20" key="${app:Layer8.animcontrolcopy1.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="spin_poly">
+      <step format="4s1" from="0" key="${app:Layer9.control6copy1.rot1}" rate="linear" to="360"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="scale_image_larger">
+      <step format="4s1" from="400" key="${app:Layer10.control10.grd_width}" rate="easein" to="640"/>
+      <step format="4s1" from="300" key="${app:Layer10.control10.grd_height}" rate="easein" to="480"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="scale_image_smaller">
+      <step format="4s1" from="480" key="${app:Layer11.control12.grd_height}" rate="easein" to="400"/>
+      <step format="4s1" from="640" key="${app:Layer11.control12.grd_width}" rate="easein" to="300"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="crank_dual">
+      <step format="4s1" key="${app:Layer12.cranklogo_dual.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="banana_dual">
+      <step format="4s1" key="${app:Layer12.banana_dual.grd_x}" rate="easein" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="ball_dual">
+      <step format="4s1" key="${app:Layer12.ball_dual.grd_x}" rate="bounce" to="400"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="polyfill">
+      <step format="4s1" key="${app:Layer13.poly_fill.grd_x}" rate="Linear" to="300"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="polyloop">
+      <step format="4s1" from="10" key="${app:Layer13.poly_loop.grd_x}" rate="linear" to="300"/>
+    </animation>
+    <animation duration="1000" fps="60" iterations="1" name="rectfill">
+      <step format="4s1" from="10" key="${app:Layer13.rect_fill.grd_x}" rate="easein" to="300"/>
+    </animation>
+  </animations>
+</gapp>

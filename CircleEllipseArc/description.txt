@@ -1,0 +1,6 @@
+CircleEllipseArc Benchmark
+
+This benchmark draws circles, ellipses, arcs of circles, and arcs of ellipses.
+
+It measures updates per second for filled and stroked drawings and it has cases
+for different stroke widths and for different arc sweep angles.

@@ -1,0 +1,13 @@
+meta:
+  description: |-
+    ImageBlendingPerftest
+
+    Measure the fps of a event driven animation over a number of loops, with the fps polled at a set interval. 
+    The animation is driven via the timer.tick event. CBLoop listens to this event, does some data changes, and then
+    send another timer.tick event.
+
+    This test is meant to cover a gap in our performance measurements in the case of animations with large number of
+    images which are alpha blended.
+  prs:
+    - type: jira
+      id: IN-548

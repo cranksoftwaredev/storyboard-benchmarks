@@ -1,0 +1,6 @@
+Snow Benchmark: Creates different render extensions based on the screen and has them fall from top to bottom. Provides the frame rate in the top left of the screen.
+
+Each render extension is created based on pseudo random numbers; a seed can be entered to get consistent results or the system time can be used (defaults to static seed of 1). 
+The controls will be created at different times based on the generated number and will have different ‘X’ positions based on the number.
+Each screen will generate the controls at the same positions and same relative times, entering a seed or leaving the system time to be used does not change this.
+

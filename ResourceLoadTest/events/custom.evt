@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event name="gre.resource_loaded" type="0x40"/>
+  <event name="next_screen" type="0x40"/>
+  <event name="start_async_timing" type="0x40"/>
+  <event name="stop_timing" type="0x40"/>
+</eventdefinitions>

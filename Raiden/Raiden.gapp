@@ -1,0 +1,1579 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gapp version="2.0">
+  <dimension format="ARGB8888" height="640" width="480"/>
+  <data format="1s0" key="fps" value="Testing….60.0 fps"/>
+  <data format="4s1" key="timer_interval" value="50"/>
+  <layers>
+    <layer height="640" name="cloud_layer" width="480">
+      <control active="1" height="128" hidden="0" name="cloud1" opaque="1" width="128" x="50" y="52">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud2" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud3" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud4" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud5" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud6" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud7" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud8" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud9" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud10" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud11" opaque="1" width="128" x="60" y="62">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="128" hidden="0" name="cloud12" opaque="1" width="128" x="60" y="67">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/cloud.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="640" name="enemy_ship_layer" width="480">
+      <control active="1" height="64" hidden="0" name="enemy_ship1" opaque="1" width="64" x="344" y="147">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship2" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship3" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship4" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship5" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship6" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship7" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="64" hidden="0" name="enemy_ship8" opaque="1" width="64" x="354" y="157">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship2.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet1" opaque="1" width="20" x="272" y="5">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet2" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet3" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet4" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet5" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet6" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet7" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet8" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet9" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet10" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet11" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet12" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet13" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet14" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet15" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet16" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet17" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet18" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet19" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet20" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet21" opaque="1" width="20" x="282" y="15">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet22" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet23" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet24" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet25" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet26" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet27" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet28" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet29" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet30" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet31" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet32" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet33" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet34" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet35" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet36" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet37" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet38" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="enemy_bullet39" opaque="1" width="20" x="292" y="25">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/enemybullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="640" name="fighter_ship_layer" width="480">
+      <control active="1" height="64" hidden="0" name="fighter_ship" opaque="1" width="64" x="14" y="575">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship1.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet1" opaque="1" width="20" x="37" y="477">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet2" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet3" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet4" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet5" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet6" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet7" opaque="1" width="20" x="47" y="487">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet8" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet9" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet10" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet11" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet12" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="20" hidden="0" name="bullet13" opaque="1" width="20" x="57" y="497">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/bullet.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="640" name="ground_layer" width="480">
+      <control active="1" height="800" hidden="0" name="ground_tile" opaque="1" width="480" x="0" y="-37">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/groundtile.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">1</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="40" name="headerbar_layer" width="480">
+      <control active="1" height="40" hidden="0" name="header_bkg" opaque="1" width="480" x="0" y="0">
+        <render handler="fill">
+          <arg k="alpha">255</arg>
+          <arg k="color">0x181818</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="30" hidden="0" name="fps_label" opaque="1" width="292" x="10" y="10">
+        <render handler="text">
+          <arg k="alpha">255</arg>
+          <arg k="color">0xcccccc</arg>
+          <arg k="font">fonts/DejaVuSans.ttf</arg>
+          <arg k="halign">1</arg>
+          <arg k="rotation">0</arg>
+          <arg k="size">18</arg>
+          <arg k="style">1</arg>
+          <arg k="text">${app:fps}</arg>
+          <arg k="underline">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="wrap">0</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+    <layer height="640" name="plane_layer" width="480">
+      <control active="1" height="48" hidden="0" name="plane1" opaque="1" width="48" x="122" y="97">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane2" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane3" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane4" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane5" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane6" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane7" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane8" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane9" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane10" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane11" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane12" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane13" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane14" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane15" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane16" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane17" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane18" opaque="1" width="48" x="132" y="107">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane19" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane20" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane21" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane22" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane23" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane24" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane25" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+      <control active="1" height="48" hidden="0" name="plane26" opaque="1" width="48" x="142" y="117">
+        <render handler="image">
+          <arg k="alpha">255</arg>
+          <arg k="aspect">0</arg>
+          <arg k="halign">1</arg>
+          <arg k="loadscaled">0</arg>
+          <arg k="name">images/ship3.png</arg>
+          <arg k="rotation">0</arg>
+          <arg k="scale">0</arg>
+          <arg k="tile">0</arg>
+          <arg k="valign">1</arg>
+          <arg k="x">0</arg>
+          <arg k="y">0</arg>
+        </render>
+      </control>
+    </layer>
+  </layers>
+  <screens>
+    <screen default="1" name="Screen1">
+      <action input_event="start_timer" type="gra.timer">
+        <arg k="count">-1</arg>
+        <arg k="name">tick</arg>
+        <arg k="repeat">${app:timer_interval}</arg>
+        <arg k="rtime">1</arg>
+      </action>
+      <action input_event="timer.tick" type="gra.lua">
+        <arg k="script">loop</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.lua">
+        <arg k="script">init</arg>
+      </action>
+      <action input_event="gre.screenshow.post" type="gra.timer">
+        <arg k="count">-1</arg>
+        <arg k="name">fps</arg>
+        <arg k="repeat">1000</arg>
+        <arg k="rtime">1000</arg>
+      </action>
+      <action input_event="timer.fps" type="gra.lua">
+        <arg k="script">updateFPS</arg>
+      </action>
+      <instance alpha="255" hidden="0" index="0" layer="ground_layer" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="1" layer="plane_layer" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="2" layer="cloud_layer" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="3" layer="enemy_ship_layer" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="4" layer="fighter_ship_layer" opaque="0" x="0" y="0"/>
+      <instance alpha="255" hidden="0" index="5" layer="headerbar_layer" opaque="0" x="0" y="0"/>
+    </screen>
+  </screens>
+</gapp>

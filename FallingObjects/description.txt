@@ -1,0 +1,15 @@
+FallingObjects: Tests engine performance of objects doing a simple motion (going from the top of the screen to the bottom) using multiple copies of each object, using a variety of different render extensions and parameters.
+
+Each screen has multiple versions as follows:
+    - Event driven movement, objects fall from top to bottom, with redraws driven by events
+    - Animation driven movement, objects fall from top to bottom, redraws and frame rate set
+    - Without alpha blending, object alpha set to 255
+    - With alpha blending, object alpha set to 127
+    - Without rotation, objects fall with angle of 0
+    - With rotation, objects fall with angle set to 45*
+
+*Not including text, which only accepts rotations that are multiples of 90
+Text therefore sets its angle to 90
+
+Each screen will repeat the process of objects falling multiple times, each time doubling the number of objects.
+

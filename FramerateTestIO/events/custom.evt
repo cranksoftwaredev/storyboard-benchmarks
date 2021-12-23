@@ -1,0 +1,12 @@
+
+gre.animate.complete.banner_scroll1 #End of animation
+
+gre.animate.complete.banner_scroll2 #End of animation
+
+timer.tick #Timer interval trigger event
+
+StartFramerateTest
+
+HoldScreen
+
+RefreshScreen

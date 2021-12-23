@@ -1,0 +1,10 @@
+
+gre.animate.complete.banner_scroll1 #End of animation
+
+gre.animate.complete.banner_scroll2 #End of animation
+
+timer.tick #Timer interval trigger event
+
+timer.exit##exit timer fired #The timer named exit is firing
+
+timer_start

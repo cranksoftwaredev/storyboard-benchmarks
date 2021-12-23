@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<eventdefinitions>
+  <event format="1s0 value" name="change_text" type="0x40">
+    <field name="value">
+      <attr f="i" k="sb.max_value">127</attr>
+      <attr f="i" k="sb.min_value">-128</attr>
+    </field>
+  </event>
+  <event name="gre.animate.complete.banner_scroll1" type="0x8">
+    <description>End of animation</description>
+  </event>
+  <event name="gre.animate.complete.banner_scroll2" type="0x8">
+    <description>End of animation</description>
+  </event>
+  <event name="gre.animate.stop.banner_scroll1" type="0x8">
+    <label>banner_scroll1 animation stopped</label>
+    <description>The animation named banner_scroll1 has been stopped</description>
+  </event>
+  <event name="gre.animate.stop.banner_scroll2" type="0x8">
+    <label>banner_scroll2 animation stopped</label>
+    <description>The animation named banner_scroll2 has been stopped</description>
+  </event>
+  <event name="timer.exit" type="0x0">
+    <description>The timer named exit is firing</description>
+  </event>
+  <event name="timer_start" type="0x0"/>
+</eventdefinitions>
