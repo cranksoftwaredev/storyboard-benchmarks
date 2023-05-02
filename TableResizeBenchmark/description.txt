@@ -1,0 +1,9 @@
+This test measures the scalability of table resizing by resizing a table
+starting with 300 rows and 50 columns (5 different templates).
+
+The first test (Incremental Row) adds one row.
+The second test (Decremental Row) removes one row.
+The third and fourth test are the same for columns.
+The fifth and sixth test add/remove one row and column simultaneously.
+The seventh test (Jump Down) removes 150 rows.
+The eighth test (Jump Up) add 150 rows.
